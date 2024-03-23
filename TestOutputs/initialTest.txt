@@ -1,0 +1,123 @@
+Total Test Scenarios:  63872
+
+
+for kernel in ['poly', 'rbf', 'sigmoid', 'linear']:
+	for decision_function_shape in ['ovo', 'ovr']:
+		for probability in [True, False]:
+			for shrinking in [True, False]:
+				for max_iter in range(10, 5000, 10):
+					for c in range(1, 5, 1):
+
+
+
+Solution:  {'kernel': 'linear', 'max_iter': 1760, 'decision_function_shape': 'ovo', 'probability': False, 'shrinking': False, 'C': 4, 'closed_accuracy': 0.8051948051948052, 'closed_clf': Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=4, decision_function_shape='ovo', kernel='linear',
+                     max_iter=1760, shrinking=False))]), 'closed_pred': array([0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0,
+       1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1,
+       0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0,
+       0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0,
+       0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1,
+       0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1,
+       0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+      dtype=int64)}
+Accuracy:  0.8051948051948052
+Solution:  {'kernel': 'linear', 'max_iter': 1140, 'decision_function_shape': 'ovr', 'probability': True, 'shrinking': True, 'C': 4, 'closed_accuracy': 0.8116883116883117, 'closed_clf': Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=4, kernel='linear', max_iter=1140, probability=True))]), 'closed_pred': array([0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0,
+       0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0,
+       0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1,
+       0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0,
+       0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1,
+       0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1,
+       0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+      dtype=int64)}
+Accuracy:  0.8116883116883117
+Solution:  {'kernel': 'linear', 'max_iter': 1560, 'decision_function_shape': 'ovr', 'probability': True, 'shrinking': True, 'C': 4, 'closed_accuracy': 0.8116883116883117, 'closed_clf': Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=4, kernel='linear', max_iter=1560, probability=True))]), 'closed_pred': array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0,
+       0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0,
+       0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1,
+       0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0,
+       0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1,
+       0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1,
+       0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+      dtype=int64)}
+Accuracy:  0.8116883116883117
+Solution:  {'kernel': 'linear', 'max_iter': 1760, 'decision_function_shape': 'ovr', 'probability': True, 'shrinking': True, 'C': 4, 'closed_accuracy': 0.8051948051948052, 'closed_clf': Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=4, kernel='linear', max_iter=1760, probability=True))]), 'closed_pred': array([0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0,
+       1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1,
+       0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0,
+       0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0,
+       0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1,
+       0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1,
+       0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+      dtype=int64)}
+Accuracy:  0.8051948051948052
+Solution:  {'kernel': 'linear', 'max_iter': 1140, 'decision_function_shape': 'ovr', 'probability': True, 'shrinking': False, 'C': 4, 'closed_accuracy': 0.8116883116883117, 'closed_clf': Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=4, kernel='linear', max_iter=1140, probability=True,
+                     shrinking=False))]), 'closed_pred': array([0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0,
+       0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0,
+       0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1,
+       0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0,
+       0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1,
+       0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1,
+       0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+      dtype=int64)}
+Accuracy:  0.8116883116883117
+Solution:  {'kernel': 'linear', 'max_iter': 1560, 'decision_function_shape': 'ovr', 'probability': True, 'shrinking': False, 'C': 4, 'closed_accuracy': 0.8116883116883117, 'closed_clf': Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=4, kernel='linear', max_iter=1560, probability=True,
+                     shrinking=False))]), 'closed_pred': array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0,
+       0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0,
+       0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1,
+       0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0,
+       0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1,
+       0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1,
+       0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+      dtype=int64)}
+Accuracy:  0.8116883116883117
+Solution:  {'kernel': 'linear', 'max_iter': 1140, 'decision_function_shape': 'ovr', 'probability': False, 'shrinking': True, 'C': 4, 'closed_accuracy': 0.8116883116883117, 'closed_clf': Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc', SVC(C=4, kernel='linear', max_iter=1140))]), 'closed_pred': array([0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0,
+       0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0,
+       0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1,
+       0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0,
+       0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1,
+       0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1,
+       0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+      dtype=int64)}
+Accuracy:  0.8116883116883117
+Solution:  {'kernel': 'linear', 'max_iter': 1560, 'decision_function_shape': 'ovr', 'probability': False, 'shrinking': True, 'C': 4, 'closed_accuracy': 0.8116883116883117, 'closed_clf': Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc', SVC(C=4, kernel='linear', max_iter=1560))]), 'closed_pred': array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0,
+       0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0,
+       0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1,
+       0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0,
+       0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1,
+       0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1,
+       0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+      dtype=int64)}
+Accuracy:  0.8116883116883117
+Solution:  {'kernel': 'linear', 'max_iter': 1140, 'decision_function_shape': 'ovr', 'probability': False, 'shrinking': False, 'C': 4, 'closed_accuracy': 0.8116883116883117, 'closed_clf': Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=4, kernel='linear', max_iter=1140, shrinking=False))]), 'closed_pred': array([0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0,
+       0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0,
+       0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1,
+       0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0,
+       0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1,
+       0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1,
+       0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+      dtype=int64)}
+Accuracy:  0.8116883116883117
+Solution:  {'kernel': 'linear', 'max_iter': 1560, 'decision_function_shape': 'ovr', 'probability': False, 'shrinking': False, 'C': 4, 'closed_accuracy': 0.8116883116883117, 'closed_clf': Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=4, kernel='linear', max_iter=1560, shrinking=False))]), 'closed_pred': array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0,
+       0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0,
+       0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1,
+       0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0,
+       0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1,
+       0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1,
+       0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+      dtype=int64)}
+Accuracy:  0.8116883116883117

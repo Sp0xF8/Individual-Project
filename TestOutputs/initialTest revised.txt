@@ -1,0 +1,122 @@
+Total Test Scenarios:  96000
+
+
+for kernel in ['poly', 'rbf', 'sigmoid', 'linear']:
+	for decision_function_shape in ['ovo', 'ovr']:
+		for probability in [True, False]:
+			for shrinking in [True, False]:
+				for max_iter in range(2500, 5000, 10):
+					for c in range(1, 13, 1):
+
+
+
+Solution:  {'kernel': 'linear', 'max_iter': 4990, 'decision_function_shape': 'ovr', 'probability': False, 'shrinking': False, 'C': 3, 'closed_accuracy': 0.7532467532467533, 'closed_clf': Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=3, kernel='linear', max_iter=4990, shrinking=False))]), 'closed_pred': array([0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0,
+       1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0,
+       0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1,
+       0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0,
+       0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0,
+       0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1,
+       0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+      dtype=int64), 'closed_recall': 0.6545454545454545, 'closed_f1': 0.6545454545454545, 'closed_precision': 0.6545454545454545}
+Accuracy:  0.6545454545454545
+Solution:  {'kernel': 'linear', 'max_iter': 4990, 'decision_function_shape': 'ovr', 'probability': False, 'shrinking': False, 'C': 4, 'closed_accuracy': 0.7597402597402597, 'closed_clf': Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=4, kernel='linear', max_iter=4990, shrinking=False))]), 'closed_pred': array([0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0,
+       0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0,
+       0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1,
+       0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0,
+       0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0,
+       0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1,
+       0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+      dtype=int64), 'closed_recall': 0.6363636363636364, 'closed_f1': 0.6542056074766355, 'closed_precision': 0.6730769230769231}
+Accuracy:  0.6542056074766355
+Solution:  {'kernel': 'linear', 'max_iter': 4990, 'decision_function_shape': 'ovr', 'probability': False, 'shrinking': False, 'C': 5, 'closed_accuracy': 0.7532467532467533, 'closed_clf': Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=5, kernel='linear', max_iter=4990, shrinking=False))]), 'closed_pred': array([0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0,
+       1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0,
+       0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1,
+       0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0,
+       0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1,
+       0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1,
+       0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+      dtype=int64), 'closed_recall': 0.6727272727272727, 'closed_f1': 0.6607142857142858, 'closed_precision': 0.6491228070175439}
+Accuracy:  0.6607142857142858
+Solution:  {'kernel': 'linear', 'max_iter': 4990, 'decision_function_shape': 'ovr', 'probability': False, 'shrinking': False, 'C': 6, 'closed_accuracy': 0.7467532467532467, 'closed_clf': Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=6, kernel='linear', max_iter=4990, shrinking=False))]), 'closed_pred': array([0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0,
+       1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0,
+       0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1,
+       0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0,
+       0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0,
+       0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1,
+       0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+      dtype=int64), 'closed_recall': 0.6545454545454545, 'closed_f1': 0.6486486486486486, 'closed_precision': 0.6428571428571429}
+Accuracy:  0.6486486486486486
+Solution:  {'kernel': 'linear', 'max_iter': 4990, 'decision_function_shape': 'ovr', 'probability': False, 'shrinking': False, 'C': 7, 'closed_accuracy': 0.7597402597402597, 'closed_clf': Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=7, kernel='linear', max_iter=4990, shrinking=False))]), 'closed_pred': array([0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0,
+       0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0,
+       0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1,
+       0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0,
+       0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0,
+       0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1,
+       0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+      dtype=int64), 'closed_recall': 0.6363636363636364, 'closed_f1': 0.6542056074766355, 'closed_precision': 0.6730769230769231}
+Accuracy:  0.6542056074766355
+Solution:  {'kernel': 'linear', 'max_iter': 4990, 'decision_function_shape': 'ovr', 'probability': False, 'shrinking': False, 'C': 8, 'closed_accuracy': 0.7662337662337663, 'closed_clf': Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=8, kernel='linear', max_iter=4990, shrinking=False))]), 'closed_pred': array([0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0,
+       0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0,
+       0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1,
+       0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0,
+       0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1,
+       0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1,
+       0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+      dtype=int64), 'closed_recall': 0.6727272727272727, 'closed_f1': 0.6727272727272727, 'closed_precision': 0.6727272727272727}
+Accuracy:  0.6727272727272727
+Solution:  {'kernel': 'linear', 'max_iter': 4990, 'decision_function_shape': 'ovr', 'probability': False, 'shrinking': False, 'C': 9, 'closed_accuracy': 0.7792207792207793, 'closed_clf': Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=9, kernel='linear', max_iter=4990, shrinking=False))]), 'closed_pred': array([0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0,
+       0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0,
+       0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1,
+       0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0,
+       0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1,
+       0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1,
+       0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+      dtype=int64), 'closed_recall': 0.6909090909090909, 'closed_f1': 0.6909090909090909, 'closed_precision': 0.6909090909090909}
+Accuracy:  0.6909090909090909
+Solution:  {'kernel': 'linear', 'max_iter': 4990, 'decision_function_shape': 'ovr', 'probability': False, 'shrinking': False, 'C': 10, 'closed_accuracy': 0.7597402597402597, 'closed_clf': Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=10, kernel='linear', max_iter=4990, shrinking=False))]), 'closed_pred': array([0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0,
+       1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 1, 0,
+       0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1,
+       0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0,
+       0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1,
+       0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1,
+       0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+      dtype=int64), 'closed_recall': 0.6545454545454545, 'closed_f1': 0.6605504587155963, 'closed_precision': 0.6666666666666666}
+Accuracy:  0.6605504587155963
+Solution:  {'kernel': 'linear', 'max_iter': 4990, 'decision_function_shape': 'ovr', 'probability': False, 'shrinking': False, 'C': 11, 'closed_accuracy': 0.7532467532467533, 'closed_clf': Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=11, kernel='linear', max_iter=4990, shrinking=False))]), 'closed_pred': array([0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0,
+       1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0,
+       0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1,
+       0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0,
+       0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1,
+       0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1,
+       0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+      dtype=int64), 'closed_recall': 0.6181818181818182, 'closed_f1': 0.6415094339622642, 'closed_precision': 0.6666666666666666}
+Accuracy:  0.6415094339622642
+Solution:  {'kernel': 'linear', 'max_iter': 4990, 'decision_function_shape': 'ovr', 'probability': False, 'shrinking': False, 'C': 12, 'closed_accuracy': 0.7597402597402597, 'closed_clf': Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('svc',
+                 SVC(C=12, kernel='linear', max_iter=4990, shrinking=False))]), 'closed_pred': array([0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0,
+       0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0,
+       0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1,
+       0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0,
+       0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0,
+       0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1,
+       0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0],
+      dtype=int64), 'closed_recall': 0.6545454545454545, 'closed_f1': 0.6605504587155963, 'closed_precision': 0.6666666666666666}
+Accuracy:  0.6605504587155963
